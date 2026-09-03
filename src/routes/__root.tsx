@@ -8,6 +8,7 @@ import {
   Scripts,
 } from "@tanstack/react-router";
 import { useEffect, type ReactNode } from "react";
+import { Toaster } from "@/components/ui/sonner";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -77,14 +78,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+       { title: "KrishiSetu — Farmer to Market" },
+       { name: "description", content: "A direct farmer-to-market platform for fresh produce, fair prices, and better market insights." },
+       { name: "author", content: "KrishiSetu" },
+       { property: "og:title", content: "KrishiSetu — Farmer to Market" },
+       { property: "og:description", content: "Connect harvests directly with buyers through transparent produce listings and mandi insights." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:site", content: "@Lovable" },
+       { rel: "preconnect", href: "https://fonts.googleapis.com" },
+       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+       { rel: "stylesheet", href: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" },
     ],
     links: [
       {
@@ -119,6 +123,7 @@ function RootComponent() {
 
   return (
     <QueryClientProvider client={queryClient}>
+       <Toaster position="top-right" />
       {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
       <Outlet />
     </QueryClientProvider>
