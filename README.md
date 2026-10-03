@@ -54,15 +54,6 @@ Create a prominent segmented view switcher in the header with three views:
 
 Ensure all API calls use native fetch, handle CORS seamlessly, and keep code modular and performant.
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Continue developing this project in the [Lovable editor](https://lovable.dev/projects/aeb571de-cf23-4cc2-aa17-a396ce8b829f).
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: every change made in Lovable is committed straight to this repository.
-- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
