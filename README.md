@@ -54,7 +54,6 @@ Create a prominent segmented view switcher in the header with three views:
 
 Ensure all API calls use native fetch, handle CORS seamlessly, and keep code modular and performant.
 
-
 ## Development
 
 Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
